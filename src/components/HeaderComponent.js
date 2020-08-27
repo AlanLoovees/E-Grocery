@@ -12,7 +12,8 @@ class Header extends Component {
         this.state = {
             isCartOpen: false,
             isLocModal: false,
-            location: 'Enter Pincode'
+            location: 'Enter Pincode',
+            cart: null
         };
         this.toggleCartModal = this.toggleCartModal.bind(this);
         this.changeLocation = this.changeLocation.bind(this);
@@ -97,7 +98,7 @@ class Header extends Component {
                                         model=".pincode"
                                         id="pincode"
                                         name="pincode"
-                                        placeholder="Your Pincode"
+                                        placeholder={this.state.location}
                                         className="form-control"
                                         validators={{
                                             isPincode,
