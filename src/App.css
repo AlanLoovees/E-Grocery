@@ -6,6 +6,8 @@
   font-weight: 500;
   color: white;
   height: 4rem;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .nav-link {
