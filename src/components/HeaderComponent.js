@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Navbar, NavbarBrand, NavItem, Nav, Button, Modal, ModalHeader, ModalBody, Row, Col, Label } from "reactstrap";
 import { NavLink } from 'react-router-dom';
 import { LocalForm, Control, Errors } from "react-redux-form";
+import cookie from "react-cookies";
 
 
 const isPincode = (val) => val && val.length === 6;
@@ -11,13 +12,18 @@ class Header extends Component {
         super(props);
         this.state = {
             isCartOpen: false,
-            isLocModal: false,
-            location: 'Enter Pincode',
-            cart: null
+            isLocModal: false
         };
         this.toggleCartModal = this.toggleCartModal.bind(this);
         this.changeLocation = this.changeLocation.bind(this);
         this.toggleLocModal = this.toggleLocModal.bind(this);
+    }
+
+    componentWillMount() {
+        this.state = {
+            location: cookie.load('location'),
+            cart: cookie.load('cart')
+        }
     }
 
     toggleCartModal() {
@@ -37,6 +43,7 @@ class Header extends Component {
             location: values.pincode,
             isLocModal: false
         })
+        cookie.save('location', values.pincode)
     }
 
     render() {
@@ -50,7 +57,8 @@ class Header extends Component {
                                 to="/home"
                                 onClick={this.toggleLocModal}
                             >
-                                {this.state.location}{" "}
+                                {this.state.location ? this.state.location : 'Enter pincode'}
+                                {" "}
                                 <span className="fa fa-map-marker fa-lg"></span>
                             </NavLink>
                             <NavLink

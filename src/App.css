@@ -3,11 +3,21 @@
 .navbar {
   background-color: #43AA8B;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   height: 4rem;
 }
 
 .nav-link {
+  font-size: 1.2rem;
   color: white !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.85rem !important;
+}
+
+.modal {
+  font-family: 'Montserrat', sans-serif;
 }
