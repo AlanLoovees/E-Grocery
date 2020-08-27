@@ -46,11 +46,18 @@ class Header extends Component {
                     <Nav navbar>
                         <NavItem>
                             <NavLink
-                                className="nav-link ml-auto"
+                                className="nav-link ml-auto d-none d-md-block"
                                 to="/home"
                                 onClick={this.toggleLocModal}
                             >
                                 {this.state.location}{" "}
+                                <span className="fa fa-map-marker fa-lg"></span>
+                            </NavLink>
+                            <NavLink
+                                className="nav-link ml-auto d-sm-none"
+                                to="/home"
+                                onClick={this.toggleLocModal}
+                            >
                                 <span className="fa fa-map-marker fa-lg"></span>
                             </NavLink>
                         </NavItem>
@@ -61,11 +68,18 @@ class Header extends Component {
                     <Nav navbar>
                         <NavItem>
                             <NavLink
-                                className="nav-link ml-auto"
+                                className="nav-link ml-auto d-none d-md-block"
                                 to="/home"
                                 onClick={this.toggleCartModal}
                             >
                                 Cart{" "}
+                                <span className="fa fa-shopping-cart fa-lg"></span>
+                            </NavLink>
+                            <NavLink
+                                className="nav-link ml-auto d-sm-none"
+                                to="/home"
+                                onClick={this.toggleCartModal}
+                            >
                                 <span className="fa fa-shopping-cart fa-lg"></span>
                             </NavLink>
                         </NavItem>
