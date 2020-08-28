@@ -23,3 +23,26 @@
 .modal {
   font-family: 'Montserrat', sans-serif;
 }
+
+.footer {
+  background-color: #43AA8B;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer h5 {
+  font-weight: 600;
+}
+
+.btn-social-icon {
+  color: white !important;
+}
+
+.copyright {
+  background-color: #43AA8B;
+  margin-top: 1rem;
+  font-weight: 400;
+}
