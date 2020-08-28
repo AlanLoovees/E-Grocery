@@ -12,18 +12,20 @@ class Header extends Component {
         super(props);
         this.state = {
             isCartOpen: false,
-            isLocModal: false
+            isLocModal: false,
+            location: null,
+            cart: null
         };
         this.toggleCartModal = this.toggleCartModal.bind(this);
         this.changeLocation = this.changeLocation.bind(this);
         this.toggleLocModal = this.toggleLocModal.bind(this);
     }
 
-    componentWillMount() {
-        this.state = {
+    componentDidMount() {
+        this.setState({
             location: cookie.load('location'),
             cart: cookie.load('cart')
-        }
+        })
     }
 
     toggleCartModal() {
