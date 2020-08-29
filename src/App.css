@@ -24,11 +24,55 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.category {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .category {
+    margin: 2rem;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .category {
+    margin: 3rem;
+  }
+}
+
+.item-display {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.item-list {
+  width: 100%;
+  overflow: auto;
+}
+
+.item {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);;
+  margin: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.item-image {
+  margin: 1rem;
+  height: 8rem;
+}
+
 .footer {
   background-color: #43AA8B;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: white;
+  margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
 }

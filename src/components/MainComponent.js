@@ -1,19 +1,30 @@
 import React, { Component } from "react";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
-import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./HomeComponent";
 import Search from "./SearchComponent";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { ITEMS } from "../shared/items";
 
-export default class Main extends Component {
+
+class Main extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            items: ITEMS
+        }
+    }
+
     render() {
+        console.log("Hi")
         return (
             <div>
                 <HeaderComponent />
                 <br/><br/><br/>
                 <Search/>
                 <Switch>
-                    <Route path="/home" component={Home} />
+                    <Route path="/home" component={() => <Home items={this.state.items}/>}/>
                     {/* <Route path="/aboutus" component={() => <About leaders={this.props.leaders}/>}/>
                     <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes}/>}/>
                     <Route path="/menu/:dishId" component={DishWithId}/>
@@ -25,3 +36,6 @@ export default class Main extends Component {
         );
     }
 }
+
+
+export default Main;
