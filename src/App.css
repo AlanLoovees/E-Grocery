@@ -33,12 +33,38 @@
   .category {
     margin: 2rem;
   }
+  .search {
+    margin-top: 1rem;
+    background-color: #F2F2F2 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px !important;
+  }
 }
 
 @media only screen and (min-width: 993px) {
   .category {
     margin: 3rem;
   }
+  .search {
+    margin-top: 1rem;
+    background-color: #F2F2F2 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px !important;
+  }
+}
+
+.search input {
+  background-color: #F2F2F2;
+  border: 0 !important;
+}
+
+.search i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.65rem;
+}
+
+.search .row {
+  margin-left: 0.1rem;
 }
 
 .item-display {

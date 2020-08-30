@@ -35,7 +35,7 @@ export const ITEMS = [
     },
     {
         id: 2,
-        name: 'Orange',
+        name: 'Cleaner',
         image: '/assets/images/cleaning.png',
         category: 'Cleaning & Household',
         price: '₹50',
@@ -532,6 +532,74 @@ export const ITEMS = [
         image: '/assets/images/pen.png',
         category: 'Stationary',
         price: '₹50',
+        shops: [
+            {
+                shopID: 0,
+                name: 'Shop 0'
+            },
+            {
+                shopID: 1,
+                name: 'Shop 1'
+            },
+        ]
+    },
+    {
+        id: 32,
+        name: 'Orange',
+        image: '/assets/images/item.png',
+        category: 'Fruits & Vegetables',
+        price: '₹50/kg',
+        shops: [
+            {
+                shopID: 0,
+                name: 'Shop 0'
+            },
+            {
+                shopID: 1,
+                name: 'Shop 1'
+            },
+        ]
+    },
+    {
+        id: 33,
+        name: 'Orange',
+        image: '/assets/images/item.png',
+        category: 'Fruits & Vegetables',
+        price: '₹50/kg',
+        shops: [
+            {
+                shopID: 0,
+                name: 'Shop 0'
+            },
+            {
+                shopID: 1,
+                name: 'Shop 1'
+            },
+        ]
+    },
+    {
+        id: 34,
+        name: 'Orange',
+        image: '/assets/images/item.png',
+        category: 'Fruits & Vegetables',
+        price: '₹50/kg',
+        shops: [
+            {
+                shopID: 0,
+                name: 'Shop 0'
+            },
+            {
+                shopID: 1,
+                name: 'Shop 1'
+            },
+        ]
+    },
+    {
+        id: 35,
+        name: 'Orange',
+        image: '/assets/images/item.png',
+        category: 'Fruits & Vegetables',
+        price: '₹50/kg',
         shops: [
             {
                 shopID: 0,

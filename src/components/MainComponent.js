@@ -17,12 +17,11 @@ class Main extends Component {
     }
 
     render() {
-        console.log("Hi")
         return (
             <div>
                 <HeaderComponent />
                 <br/><br/><br/>
-                <Search/>
+                <Search items={this.state.items}/>
                 <Switch>
                     <Route path="/home" component={() => <Home items={this.state.items}/>}/>
                     {/* <Route path="/aboutus" component={() => <About leaders={this.props.leaders}/>}/>
