@@ -5,7 +5,7 @@ function SearchFunction({value, items}) {
     if(value != null) {
         const search = items.filter((item) => item.name === value).map((item) => {
             return(
-                <div className="item col-3 col-md-1" key={item.id}>
+                <div className="item col-4 col-md-1" key={item.id}>
                     <img className="item-image" src={item.image} alt={item.name}/>
                     <h4>{item.name}</h4>
                     <h5>{item.price}</h5>
